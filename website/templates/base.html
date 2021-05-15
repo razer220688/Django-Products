@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+	</head>
+    <body class="slider-collapse">
+        <main class="content">
+
+            {% for pat in pats %}	
+
+            <div class="fullwidth-block features-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="feature left-icon wow fadeInLeft" data-wow-delay=".3s">
+                                <i class="icon-ticket"></i>
+                                <h3 class="feature-title">{{pat.title}}</h3>
+                                <p>{{dest.technology}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="fullwidth-block offers-section" data-bg-color="#f1f1f1">
+                <div class="container">
+                    <h2 class="section-title">The newest holiday offers</h2>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <article class="offer wow bounceIn">
+                                <figure class="featured-image"><img src="doctor.jpg" alt=""></figure>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <article class="offer wow bounceIn">
+                                    <figure class="featured-image"><img src="iphone.jpeg" alt=""></figure>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
